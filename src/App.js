@@ -1,25 +1,48 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import axios from 'axios';
+import './App.scss';
+import Search from './Search';
+import Albums from './Albums';
+
+const API = `https://itunes.apple.com/search?term=`; // ${ARTIST_NAME}
+const entityType = `&entity=album`;
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [],
+      query: '',
+    };
+    this.handleClick = this.handleClick.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.getArtistInfo = this.getArtistInfo.bind(this);
+  }
+
+  getArtistInfo() {
+    const { query } = this.state;
+    axios
+      .get(API + query + entityType)
+      .then(response => response.data)
+      .then(data => this.setState({ data: data.results }));
+  }
+
+  handleChange(e) {
+    this.setState({ query: e.target.value });
+  }
+
+  handleClick(e) {
+    e.preventDefault();
+    this.getArtistInfo();
+  }
+
   render() {
+    const { query, data } = this.state;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <header className="title elegantShadow">Discography</header>
+        <Search handleClick={this.handleClick} handleChange={this.handleChange} value={query} />
+        <Albums items={data} />
       </div>
     );
   }
