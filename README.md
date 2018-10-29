@@ -9,9 +9,8 @@
 3. npm install
 4. yarn start
 
-### DUE to deployment issues dealing with preflight checks, this repo is dedicated to running the Discography app locally (localhost:3000).
-
 For a look at the true commit history https://github.com/MadRiver44/Discography
+NOTE: Due to intractable issues dealing with preflight checks, CORS, and babel-lodaer dependency conflicts, this repo is is a stripped down version of the Discography app. Please view above repo for actual workflow and development track.
 
 ### This was created with Create React App.
 
