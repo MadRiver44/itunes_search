@@ -1,3 +1,5 @@
+![Discography()]https://user-images.githubusercontent.com/7386478/47652802-4fad5080-db5d-11e8-9d47-c6bdbd11779f.png)
+
 
 ### To run app, 
 
@@ -15,6 +17,9 @@ For a look at the true commit history https://github.com/MadRiver44/Discography
 The app queries the user to input the name of an artist and through an ajax request, the app hits the itunes api for search and returns the desired results.
 
 Media queries and Flexbox are used for responsiveness. Scss is used for pre-processing by adding the node-sass module. The search icon is from the Fontawesome module.
+
+### Workflow
+
 
 
 
