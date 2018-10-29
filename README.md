@@ -1,4 +1,4 @@
-![Discography()]https://user-images.githubusercontent.com/7386478/47652802-4fad5080-db5d-11e8-9d47-c6bdbd11779f.png)
+![Discography](https://user-images.githubusercontent.com/7386478/47652802-4fad5080-db5d-11e8-9d47-c6bdbd11779f.png)
 
 
 ### To run app, 
