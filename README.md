@@ -1,7 +1,8 @@
 ![Discography](https://user-images.githubusercontent.com/7386478/47652802-4fad5080-db5d-11e8-9d47-c6bdbd11779f.png)
 
+[Deployment on Heroku](https://immense-stream-10893.herokuapp.com/)
 
-### To run app, 
+### To run app locally,
 
 1. clone repo
 2. cd discograhy
