@@ -23,5 +23,7 @@ Media queries and Flexbox are used for responsiveness. Scss is used for pre-proc
 
 Starting with a design, I mapped the look and functionality. I identified where state should live so as to best distribute it to appropriate component children. From here it was mocking up the components, using Postman to get data and view the shape of the response. 
 
+App progress was mapped with Github projects board.
+
 A Regex was used to parse the returned release date and .replace to enhance the image size.
 
